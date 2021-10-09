@@ -13,10 +13,12 @@
     "express-validator": "^6.12.1",
     "jsonwebtoken": "^8.5.1",
     "morgan": "~1.9.1",
+    "multer": "^1.4.3",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.0",
     "nodemon": "^2.0.13",
     "sequelize": "^6.6.5",
+    "sharp": "^0.29.1",
     "tedious": "^12.2.0"
   }
 }
