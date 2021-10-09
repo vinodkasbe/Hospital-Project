@@ -9,7 +9,7 @@ var doctorRouter = require('./routes/doctorRoutes');
 var staffRouter = require('./routes/hospitalStaffRoutes');
 var adminRouter = require('./routes/adminRoute');
 var loginRouter = require('./routes/auth');
-var usersRouter = require('./routes/users');
+var uploadRouter = require('./routes/uploadimage');
 const middleware = require('./Middleware/middleware');
 
 
@@ -31,6 +31,6 @@ app.use('/doctor',middleware.checkToken, doctorRouter);
 app.use('/staff',middleware.checkToken, staffRouter);
 app.use('/admin', adminRouter);
 app.use('/auth', loginRouter);
-app.use('/users', usersRouter);
+app.use('/upload', uploadRouter);
 
 module.exports = app;
